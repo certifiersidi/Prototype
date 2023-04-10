@@ -132,6 +132,6 @@ function addPet($conn, $email, $animal, $pName, $pBreed, $pDoB, $pGender, $pSize
     mysqli_stmt_bind_param($stmt, "sssssss", $email, $animal, $pName, $pBreed, $pDoB, $pGender, $pSize);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
-    header("location: ../Request.php?error=none");
+    header("location: ../ListRequest.php");
     exit();
 }

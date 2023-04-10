@@ -12,7 +12,7 @@
       <h1><a href="webapp.php">MindMyPet</a></h1>
       <nav>
         <ul>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="">Contact Us</a></li>
           <?php
             if (isset($_SESSION["useruid"])){
               echo "<li><a href='Request.php'>Request Pet Minding</a></li>";

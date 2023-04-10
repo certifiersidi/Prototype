@@ -1,13 +1,13 @@
 <?php 
   include_once 'header.php';
 ?>
-<link rel="stylesheet" href="Request.css">
-<h2>Enter Your Pet Details</h2>
+
+<h2>Enter your pet details</h2>
 <form action="Request.inc.php" name="petDetails" method="post">
 
   <div>
     <label for="Oemail">Enter the e-mail address of your account?</label>
-    <input type="email" name="Oemail" placeholder="example@email.com" required>
+    <input type="email9327" name="Oemail" placeholder="example@email.com" required>
   </div>
 
   <div>
@@ -36,7 +36,7 @@
 
   <div>
     <label for="gender">What gender is your pet?</label>
-    <select name="gender" id="gender" required>
+    <select name="gender" id="" required>
       <option value="" selected disabled hidden>Click here</option>
       <option value="Male">Male</option>
       <option value="Female">Female</option>
@@ -45,19 +45,9 @@
 
   <div>
     <label for="size">What is your pet size?</label>
-    <select name="size" id="size" required>
-      <option value="" selected disabled hidden>Click here</option>
-      <option value="small">Small</option>
-      <option value="medium">Medium</option>
-      <option value="large">Large</option>
-    </select>
+    <input type="text" name="size" placeholder="example 30x10 cm" required>
   </div>
 
   <button type="submit" name="submit">Submit</button>
-  <label for="submit">Submit Pet Details</label>
 
 </form>
-
-<?php 
-  include_once 'footer.php';
-?>

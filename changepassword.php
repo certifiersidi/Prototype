@@ -1,7 +1,7 @@
 <?php
+    
     include_once 'header.php';
     include_once 'dbh.inc.php';
-  //  include_once 'functions.inc.php';
 
     if (isset($_POST["submit"]))
     {
@@ -22,16 +22,16 @@
             $_SESSION['msg'] = "Passsword doesn't match.";
         }
     }
+    else{
+        header("location: ../webapp.php");
+    }
 ?>
-
 
 <h2>Change your password</h2>
     <form action="" method="POST">
 
         <?php 
             echo $_SESSION['msg'];
-        ?>
-        <?php 
             $_SESSION['msg'] = "";
         ?>
 

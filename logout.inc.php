@@ -1,5 +1,4 @@
 <?php
-require_once 'dbh.inc.php';
 
 session_start();
 session_unset();

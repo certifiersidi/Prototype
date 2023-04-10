@@ -13,6 +13,8 @@
         require_once 'functions.inc.php';
 
         addPet($conn, $email, $animal, $pName, $pBreed, $pDoB, $pGender, $pSize);
+        header("location: ../ListRequest.php");
 
     }
+
 ?>
