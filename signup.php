@@ -10,7 +10,7 @@
   <body>
     <section class="signup-form">
       <h2>Sign up</h2>
-      <form action="signup.inc.php" method="POST">
+      <form action="includes/signup.inc.php" method="POST">
         <input type="text" name="name" placeholder="name">
         <input type="text" name="email" placeholder="email">
         <input type="text" name="uid" placeholder="username">
